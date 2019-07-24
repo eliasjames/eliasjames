@@ -1,0 +1,54 @@
+body {
+  max-width: 60em;
+  min-width: 300px;
+  padding: 5%;
+}
+h1 {
+  font-family: sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+  margin-top: 0;
+}
+ul {
+  padding-inline-start: 10%;
+}
+p, li {
+  font-family: monospace;
+  font-size: 1.5em;
+}
+/* layout */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header > a {
+  color: black;
+  text-decoration: none;
+}
+header nav {
+  float: right;
+  width: 33%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 12em;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+}
+main nav {
+  flex-basis: 33%;
+}
+main p {
+  flex-basis: 66%;
+}
+main nav li {
+  list-style-type: none;
+}
+header li.active {
+  color: red;
+  list-style-type: none;
+  text-decoration: underline;
+}

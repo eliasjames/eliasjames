@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>overvue</title>
+    <meta name="description" content="Overvue">
+    <meta name="author" content="Elias Carlston">
+    <link rel="stylesheet" href="src/reset.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/responsive.css" />
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="dist/bundle.js"></script>
+  </head>
+  <body>
+    <div id="overvue">
+      <header>
+        <a href="/">
+          <h1>{{ siteName }}</h1>
+        </a>
+        <nav>
+          <ul>
+            <li
+              v-for="eachOption in topnav.options"
+              :class="{ active: eachOption.active }"
+            >
+              <a
+                @click="handleTopnavClick(eachOption.menuName)"
+              >
+                {{ eachOption.menuName }}
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <nav>
+          <ul>
+            <li
+              v-for="eachSubMenu in getCurrentSubMenu"
+            >
+              <a
+                @click="selectContent(eachSubMenu)"
+                :href="'#' + eachSubMenu"
+              >
+                {{ eachSubMenu }}
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <component
+          v-bind:is="currentContent"
+        >
+        </component>
+      </main>
+    </div>
+  </body>
+</html>

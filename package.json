@@ -1,0 +1,25 @@
+{
+  "name": "overvue",
+  "version": "1.0.0",
+  "description": "A JavaScript library for quickly building Single Page Apps",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify src/index.js -o dist/bundle.js",
+    "serve": "watchify src/index.js -o dist/bundle.js",
+    "start": "npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasjames/overvue.git"
+  },
+  "author": "Elias Carlston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliasjames/overvue/issues"
+  },
+  "homepage": "https://github.com/eliasjames/overvue#readme",
+  "devDependencies": {
+    "browserify": "^16.3.0",
+    "watchify": "^3.11.1"
+  }
+}

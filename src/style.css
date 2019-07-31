@@ -19,20 +19,21 @@ p, li {
 /* layout */
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 header > a {
   color: black;
   text-decoration: none;
+  min-width: 20em;
 }
 header nav {
-  float: right;
-  width: 33%;
+  width: 50%;
+  min-width: 20em;
 }
 header nav ul {
   display: flex;
   justify-content: space-between;
-  min-width: 12em;
 }
 main {
   display: flex;

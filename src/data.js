@@ -1,12 +1,12 @@
 module.exports = {
   currentContent: 'A',
-  currentSubMenu: 'one',
-  siteName: 'overvue',
+  currentSubMenu: 'writer',
+  siteName: 'elias james',
   topnav: {
     options: [
       {
         active: true,
-        menuName: 'one',
+        menuName: 'writer',
         nav: {
           options: [
             'A',
@@ -16,7 +16,7 @@ module.exports = {
         }
       },
       {
-        menuName: 'two',
+        menuName: 'programmer',
         nav: {
           options: [
             'D',
@@ -26,7 +26,7 @@ module.exports = {
         }
       },
       {
-        menuName: 'three',
+        menuName: 'musician',
         nav: {
           options: [
             'G',

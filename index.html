@@ -1,59 +1,54 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>overvue</title>
-    <meta name="description" content="Overvue">
-    <meta name="author" content="Elias Carlston">
-    <link rel="stylesheet" href="src/reset.css" />
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/responsive.css" />
-    <!-- development version, includes helpful console warnings -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="dist/bundle.js"></script>
+    <title>Elias James</title>
+    <meta name="description" content="Elias James">
+    <meta name="author" content="Elias James">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="/assets/main.css" />
+    <link type="text/css" rel="stylesheet" href="/assets/responsive.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
-    <div id="overvue">
-      <header>
-        <a href="/">
-          <h1>{{ siteName }}</h1>
+    <header>
+      <div class="well">
+        <a class="home-links" href="./index.html">
+          <img class="logo picture"
+            alt="Elias James picture"
+            src="/assets/headshot.jpg">
+          <img class="logo text"
+            alt="Elias James logo"
+            src="/assets/elias-judas-logo.gif">
         </a>
         <nav>
-          <ul>
-            <li
-              v-for="eachOption in topnav.options"
-              :class="{ active: eachOption.active }"
-            >
-              <a
-                @click="handleTopnavClick(eachOption.menuName)"
-              >
-                {{ eachOption.menuName }}
-              </a>
-            </li>
-          </ul>
+          <a href="#about">about</a>
+          <a href="#creative">creative</a>
+          <a href="#contact">contact</a>
         </nav>
-      </header>
-      <main>
-        <nav>
-          <ul>
-            <li
-              v-for="eachSubMenu in getCurrentSubMenu"
-            >
-              <a
-                @click="selectContent(eachSubMenu)"
-                :href="'#' + eachSubMenu"
-              >
-                {{ eachSubMenu }}
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <component
-          v-bind:is="currentContent"
-        >
-        </component>
-      </main>
-    </div>
+      </div>
+    </header>
+    <main>
+      <section class="well">
+        <img src="/assets/banner-office.jpg"  alt="portrait of Elias in his office with guitars hanging on the wall"/>
+      </section>
+      <section id="about" class="well">
+        <h2>#about</h2>
+        <p>an artist (lowercase 'a').</p>
+        <p>writer, musician, team builder, programmer.</p>
+        <p>get in touch!</p>
+      </section>
+      <section id="creative" class="well">
+        <h2>#creative</h2>
+        <a href="./writing">writing</p>
+        <a href="./music">music</p>
+        <a href="./photos">photos</p>
+      </section>
+      <section id="contact" class="well">
+        <h2>#contact</h2>
+        <a href="./social">social</p>
+        <a href="mailto:elias@eliasjames.com">email</p>
+      </section>
+		</main>
   </body>
 </html>

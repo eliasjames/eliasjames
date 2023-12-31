@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify src/index.js -o dist/bundle.js",
-    "serve": "watchify src/index.js -v --debug -o dist/bundle.js",
+    "serve": "http-server",
     "start": "npm run serve"
   },
   "repository": {
@@ -21,5 +21,8 @@
   "devDependencies": {
     "browserify": "^16.3.0",
     "watchify": "^3.11.1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
   }
 }

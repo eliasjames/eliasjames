@@ -1,0 +1,13 @@
+html {
+  min-width: 320px;
+}
+@media only screen and (max-width: 400px) {
+  .home-links .picture { display: none; }
+}
+@media only screen and (max-width: 769px) {
+  header .well, main .well { 
+    margin: 0 5%;
+    width: 90%; 
+  }
+  main .well img { width: 100%; }
+}

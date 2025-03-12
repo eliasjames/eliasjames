@@ -1,0 +1,9 @@
+.tasks-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+
+    .tasks-list {
+        align-self: stretch;
+    }
+}

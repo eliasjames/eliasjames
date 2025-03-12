@@ -1,0 +1,49 @@
+/* @import "../app/common.css"; */
+
+.app-card {
+  align-items: stretch;
+  background-color: var(--background-white);
+  border-radius: 8px;
+  border: 1px solid var(--border-medium);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0px;
+  width: 250px;
+
+  &:hover {
+    border: 1px solid var(--bfas-orange);
+    box-shadow: 0 0 5px var(--bfas-orange-50);
+  }
+
+  .app-icon {
+    align-items: center;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    margin: 5px 0px 5px 5px;
+  }
+
+  .title {
+    padding: 10px 5px ;
+  }
+
+  .app-card-header {
+    align-items: center;
+    border-bottom: 1px solid var(--border-light);
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    gap: 5px;
+    line-height: 22px;
+  }
+
+  .app-card-description {
+    color: var(--muted-text);
+    font-size: 14px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,15 @@
+.metric {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+
+    &.complete, &.no-data {
+        color: var(--text-success-dark);
+        .icon {
+            color: var(--text-success);
+        }
+    }
+}
+

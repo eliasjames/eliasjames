@@ -1,0 +1,39 @@
+.overview-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--background-elevated);
+  flex-grow: 2;
+
+  .overview-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .overview-title {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .overview-label {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .overview-content {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-weight: bold;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .content-item {
+    display: flex;
+    gap: 4px;
+  }
+}

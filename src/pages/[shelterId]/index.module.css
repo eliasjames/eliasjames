@@ -1,0 +1,44 @@
+.page {
+  align-items: stretch;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-geist-sans);
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 20px;
+  justify-content: center;
+
+  .titles {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .title {
+      font-size: 20px;
+    }
+
+    .subtitle {
+      color: var(--muted-text);
+      font-size: 14px;
+    }
+  }
+
+  .apps {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+  }
+}

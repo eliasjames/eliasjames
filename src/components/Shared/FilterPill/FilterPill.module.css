@@ -1,0 +1,33 @@
+.filter {
+  padding: 3px 4px 3px 6px;
+  border-radius: 3px;
+  margin: 5px 0px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  .filter-tag {
+    background-color: var(--bfas-orange-30);
+    border-radius: 10px;
+    padding: 0px 6px;
+    color: var(--bfas-orange);
+    font-weight: 600;
+  }
+
+  &:hover {
+    background-color: var(--bfas-orange-20);
+    color: var(--bfas-orange);
+  }
+
+  &.active {
+    background-color: var(--bfas-orange);
+    color: white;
+    font-weight: 600;
+
+    .filter-tag {
+      background-color: #FFFFFF40;
+      color: white;
+    }
+  }
+}

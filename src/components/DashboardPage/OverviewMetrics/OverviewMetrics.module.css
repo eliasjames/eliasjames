@@ -1,0 +1,64 @@
+.metrics {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .metric {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    &.complete {
+      .icon {
+        color: var(--text-success);
+      }
+      .metric-value {
+        color: var(--text-success-dark);
+      }
+    }
+    &.incomplete {
+      .icon {
+        color: var(--text-warning);
+      }
+      .metric-value {
+        color: var(--text-warning-dark);
+      }
+    }
+    &.not-started {
+      .icon {
+        color: var(--text-danger);
+      }
+      .metric-value {
+        color: var(--text-danger-dark);
+      }
+    }
+    &.no-data {
+      .metric-value,
+      .icon {
+        color: var(--muted-text);
+      }
+    }
+
+    .metric-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 18px;
+    }
+
+    .metric-text {
+      font-size: 14px;
+    }
+
+    .metric-value {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .divider {
+    align-self: stretch;
+    border-right: 1px solid var(--border-medium)
+  }
+}

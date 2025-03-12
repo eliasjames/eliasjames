@@ -1,0 +1,27 @@
+.pill {
+  display: flex;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--backgound-neutral);
+  background-color: var(--background-neutral-40);
+  width: fit-content;
+  font-size: 14px;
+  gap: 8px;
+}
+
+.green {
+  background-color: var(--background-success-40);
+  color: var(--text-success-dark);
+}
+
+.yellow {
+  background-color: var(--background-warning-40);
+  color: var(--text-warning-dark);
+}
+
+.red {
+  background-color: var(--background-danger-40);
+  color: var(--text-danger-dark);
+}

@@ -1,0 +1,156 @@
+.navigation {
+  align-items: stretch;
+  background-color: var(--background-white);
+  border-bottom: 1px solid var(--border-medium);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .primary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    padding: 10px;
+  }
+
+  .apps-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid var(--border-medium);
+    padding: 5px;
+  }
+
+  .app-icon {
+    height: 35px;
+    width: 35px;
+    min-width: 35px;
+    padding: 10px;
+  }
+
+  .app-icon, .app-button, .auth-button {
+    align-items: center;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    gap: 10px;
+  }
+
+  .app-icon, .app-button {
+    color: var(--muted-text);
+
+    .app-icon-image {
+      width: 35px;
+      height: 35px;
+    }
+
+    &:hover {
+      &:not(.home-icon, .disabled) {
+        font-weight: 600;
+      }
+    }
+
+    &.selected {
+      font-weight: 600;
+      color: var(--text)
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+    }
+
+    &.home-icon {
+      background-color: var(--bfas-orange);
+      color: var(--background-white);
+    }
+  }
+
+
+  .auth-button {
+    color: var(--text-blue);
+
+    &:hover {
+      &:not(.home-icon, .disabled) {
+        color: var(--text-blue);
+      }
+    }
+
+    &.selected {
+      color: var(--text-blue);
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    line-height: 18px;
+    flex-grow: 1;
+    flex-shrink: 0;
+
+
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+
+      .home-link {
+        &:hover {
+          color: var(--bfas-orange);
+        }
+      }
+
+      .chevron {
+        color: var(--background-neutral);
+        font-size: 18px;
+      }
+
+      .secondary-title {
+        color: var(--bfas-orange)
+      }
+    }
+    .sub-title {font-size: 12px;}
+  }
+
+  .divider {
+    border-right: 1px solid var(--border-medium);
+    align-self: stretch;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.horizontal-divider {
+  border-bottom: 1px solid var(--border-medium);
+  width: 200px;
+  align-self: center;
+  margin: 5px 0px;
+}
+
+
+.user-button {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .user-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid var(--border-medium);
+  }
+}

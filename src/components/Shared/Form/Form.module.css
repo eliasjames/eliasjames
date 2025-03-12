@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.field {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.message {
+  color: var(--red-9);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.required {
+  color: var(--red-9);
+  margin-right: 4px;
+  font-weight: 700;
+}

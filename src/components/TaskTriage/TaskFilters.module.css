@@ -1,0 +1,15 @@
+.filters {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  .filter-title {
+    color: var(--muted-text);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 12px;
+    align-self: stretch;
+    font-size: 14px;
+  }
+}

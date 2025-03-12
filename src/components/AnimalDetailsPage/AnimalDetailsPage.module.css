@@ -1,0 +1,153 @@
+.layout {
+  align-items: stretch;
+  background-color: #e5e8eb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  gap: 15px;
+  width: 100%;
+  border-bottom: 1px solid var(--border-medium);
+  padding: 0 0 15px 0;
+}
+
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 0;
+  margin: 20px;
+}
+
+.page-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  gap: 15px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid var(--border-medium);
+  padding: 15px;
+}
+
+.animal-id {
+  color: var(--muted-text);
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+
+.animal-name {
+  font-weight: bold;
+  font-size: 20px;
+  overflow: wrap;
+}
+
+.header-animal-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heading-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+}
+
+.header-actions-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: auto;
+}
+
+.image {
+  border: 1px solid var(--border-medium);
+  border-radius: 5px;
+}
+
+.action-button {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.tabs-container {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding: 10px;
+}
+
+.tab {
+  color: var(--muted-text);
+  cursor: pointer;
+}
+
+.tab:not(.disabled) {
+  &.active {
+    color: var(--bfas-orange);
+    border-bottom: 2px solid var(--bfas-orange);
+  }
+
+  &:hover {
+    color: var(--bfas-orange);
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .header-animal-content-container {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .heading-content {
+    align-items: center;
+  }
+
+  .header-actions-container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tabs-container {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .page-layout {
+    margin: 10px;
+  }
+
+  .page-content {
+    padding: 10px;
+  }
+}
+
+.status-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

@@ -1,0 +1,144 @@
+
+.primary-task-group {
+  align-items: stretch;
+  border-radius: 5px;
+  border: 1px solid var(--border-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0px 10px;
+  padding-bottom: 15px;
+  background-color: var(--background);
+  flex-shrink: 0;
+  overflow: hidden;
+
+  .zero-state {
+    padding: 0px 15px;
+  }
+}
+
+.task-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  padding: 0px 15px ;
+}
+
+.primary-task-group-title {
+  border-bottom: 1px solid var(--border-medium);
+  padding: 15px;
+  background-color: var(--background-elevated);
+}
+
+.task-group-title, .primary-task-group-title {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+    .info-tag {
+      background-color: var(--background-blue-20);
+      color: var(--text);
+      padding: 0px 5px;
+      border-radius: 5px;
+      font-weight: 400;
+      flex-shrink: 0;
+    }
+  }
+
+  .status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-warning-dark);
+    font-size: 14px;
+    flex-shrink: 0;
+
+    .status-icon {
+      font-size: 18px;
+    }
+
+    &.complete {
+      color: var(--text-success-dark);
+    }
+  }
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  align-items: stretch;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .task-row {
+    display: flex;
+    gap: 10px;
+    padding: 2px 15px 2px 5px;
+    align-items: center;
+    border-bottom: 1px solid var(--border-medium);
+
+    &.completed {
+      opacity: 50%;
+    }
+
+
+    &:last-child {
+      border-bottom: none;
+    } 
+
+    .animal-name {
+      width: 150px;
+      font-weight: 600;
+    }
+
+    .task-name {
+      width: 150px;
+      flex-grow: 1;
+    }
+
+    .task-status {
+      width: 100px;
+      font-weight: 600;
+
+      &.complete {
+        color: var(--text-success-dark);
+      }
+
+      &.incomplete {
+        color: var(--text-warning-dark);
+      }
+
+      &.in-progress {
+        color: var(--text-blue);
+      }
+    }
+
+    .due-date {
+      width: 120px;
+      text-align: right;
+    }
+
+    .inactive {
+      color: var(--muted-text)
+    }
+  }
+}
+
+
+.image {
+  border: 1px solid var(--border-medium);
+  background-color: var(--border-medium);
+  border-radius: 3px;
+  overflow: hidden;
+}

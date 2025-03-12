@@ -1,0 +1,13 @@
+.animal-id {
+  color: var(--muted-text);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow: hidden;
+
+  .animal-id-text {
+    text-overflow: ellipsis;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}

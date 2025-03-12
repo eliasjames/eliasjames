@@ -1,0 +1,51 @@
+{
+  "permissions": [
+    { "key": "update:shelter", "label": "Can Edit Shelter" },
+    { "key": "update:animal", "label": "Can Edit Animals" },
+    { "key": "delete:animal", "label": "Can Delete Animals" },
+    { "key": "create:task", "label": "Can Create Tasks" },
+    { "key": "update:task", "label": "Can Edit Tasks" },
+    { "key": "assign:task", "label": "Can Assign Tasks" },
+    { "key": "delete:task", "label": "Can Delete Tasks" },
+    { "key": "create:user", "label": "Can Create Users" },
+    { "key": "update:user", "label": "Can Edit Users" },
+    { "key": "delete:user", "label": "Can Delete Users" },
+    { "key": "access:medical", "label": "Can Access Medical" },
+    { "key": "access:behavior", "label": "Can Access Behavior" },
+    { "key": "access:adoption", "label": "Can Access Adoption" }
+  ],
+  "roles": {
+    "admin": [
+      "update:shelter",
+      "update:animal",
+      "delete:animal",
+      "create:task",
+      "update:task",
+      "assign:task",
+      "delete:task",
+      "create:user",
+      "update:user",
+      "delete:user",
+      "access:medical",
+      "access:behavior",
+      "access:adoption"
+    ],
+    "staff": [
+      "update:animal",
+      "create:task",
+      "update:task",
+      "assign:task",
+      "access:medical",
+      "access:behavior",
+      "access:adoption"
+    ],
+    "volunteer": [
+      "create:task",
+      "update:task",
+      "assign:task",
+      "access:medical",
+      "access:behavior",
+      "access:adoption"
+    ]
+  }
+}

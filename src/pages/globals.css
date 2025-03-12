@@ -1,0 +1,93 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+:root {
+  /* BFAS colors */
+  --bfas-orange: #f58220;
+  --bfas-orange-50: #f5822050;
+  --bfas-orange-40-opaque: #FBCDA6;
+  --bfas-orange-30: #f5822030;
+  --bfas-orange-20: #f5822020;
+  --bfas-orange-10-opaque: #FEF2E9;
+  --bfas-dark-slate: #3d3d3e;
+  --bfas-light-slate: #636466;
+
+  /* text */
+  --text: #000000;
+  --muted-text: #636466; /* BFAS light slate */
+  --text-success: #32a467; /* blueprint green4 */
+  --text-success-dark: #165a36; /* blueprint green1 */
+  --text-warning: #EC9A3C; /* blueprint orange4 */
+  --text-warning-dark: #C87619; /* blueprint orange3 */
+  --text-danger: #e76a6e; /* blueprint red4 */
+  --text-danger-dark: #8e292c; /* blueprint red1 */
+  --text-blue: #448aff; /* Material A200 */
+  --text-blue-dark: #2962ff; /* Material A700 */
+  --text-gold: #D1980B; /* blueprint gold3 */
+
+
+  /* backgrounds */
+  --background: #e5e8eb; /* blueprint light-gray3 */
+  --background-elevated: #f6f7f9; /* blueprint light-gray5 */
+  --background-white: #ffffff; /* white */
+  --background-neutral: #8f99a8; /* blueprint  */
+  --background-neutral-40: #8f99a840; /* blueprint  */
+  --background-success: #72ca9b; /* blueprint green5 */
+  --background-success-40: #72ca9b40; /* blueprint green5 */
+  --background-warning: #FBB360; /* blueprint orange5 */
+  --background-gold: #FBD065; /* blueprint gold5 */
+  --background-gold-80: #FBD06580; /* blueprint gold5 */
+
+  --background-warning-40: #FBB36040; /* blueprint gold5 */
+  --background-danger: #fa999c; /* blueprint red5 */
+  --background-danger-40: #fa999c40; /* blueprint red5 */
+  --background-blue-20: #448aff20; /* Material A200 */
+
+  /* borders */
+  --border-light: #edeff2; /* blueprint light-gray4 */
+  --border-medium: #d3d8de; /* blueprint light-gray1 */
+  --border-medium-60: #d3d8de60; /* blueprint light-gray1 */
+  --border-dark: #C5CBD3; /* blueprint gray4 */
+}
+

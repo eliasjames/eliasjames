@@ -1,0 +1,19 @@
+{
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "images/pwa/pwa_icon_orange_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/pwa/pwa_icon_orange_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "name": "Project Tailwind, Shelter Freeware",
+  "prefer_related_applications": false,
+  "short_name": "Tailwind",
+  "start_url": "/"
+}

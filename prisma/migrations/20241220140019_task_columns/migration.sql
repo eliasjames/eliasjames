@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "Task" ALTER COLUMN "assignment" DROP DEFAULT,
+ALTER COLUMN "frequency" DROP DEFAULT,
+ALTER COLUMN "type" DROP DEFAULT;

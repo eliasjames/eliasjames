@@ -1,0 +1,115 @@
+.page {
+  align-items: stretch;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-geist-sans);
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  
+  .titles {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+
+    .title {
+      font-size: 20px;
+    }
+
+    .subtitle {
+      color: var(--muted-text);
+      font-size: 14px;
+    }
+  }
+
+  .apps {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    z-index: 1;
+
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.divider {
+  align-self: stretch;
+  border-bottom: 1px solid var(--border-medium);
+  margin: 10px 0px;
+}
+
+.sign-up-form {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-row {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  
+  .label {
+    width: 80px;
+  }
+
+  .input {
+    flex-grow: 1;
+  }
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.auth-button {
+  align-self: stretch;
+  background-color: #FBC0D6 !important; 
+  font-weight: 600 !important;
+}
+
+.auth-button-secondary {
+  align-self: stretch;
+  border: 1px solid #877D9D !important;
+  font-weight: 600 !important;
+  color: #877D9D !important;
+}
+
+.form-inputs {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: stretch;
+  align-items: stretch;
+}
+
+
+

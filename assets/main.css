@@ -18,10 +18,12 @@ body {
 h1, h2, h3, h4, nav a {
   font-family: Futura, "Oswald", "Lucida Grande", Arial, sans-serif;
 }
-h3 {
-  color: #222;
+h2, h3 {
+  margin-block-start: 0.5em;
   margin-block-end: 0.25em;
 }
+h2 { color: #fc5400; }
+h3 { color: #566a33; }
 header {
   background-color: black;
   font-size: 1.25em;
@@ -43,17 +45,17 @@ nav {
   width: 4em;
 }
 nav a {
-  color: #566a33;
+  color: #fc5400;
   text-decoration: none;
 }
 nav a.active {
   color: #566a33;
 }
 nav a:active, nav a:hover {
-  color: #fc5400;
+  color: #566a33;
 }
 section {
-  margin-bottom: 7.5%;
+  margin-bottom: 2em;
 }
 section h1 {
   font-style: italic;
@@ -64,10 +66,6 @@ section img {
 }
 ul {
   margin-block-start: .25em;
-}
-.banner {
-  margin-bottom: 5%;
-  max-width: 800px;
 }
 .logo.text {
   height: 60px;
@@ -87,6 +85,9 @@ ul {
 .well {
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
+  max-width: 700px;
   width: 80%;
+}
+#about {
+  margin-top: 1.75em;
 }

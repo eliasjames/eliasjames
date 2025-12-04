@@ -11,6 +11,7 @@ import memoryDriver from "unstorage/drivers/memory";
 import vercelKVDriver from "unstorage/drivers/vercel-kv";
 import { UnstorageAdapter } from "@auth/unstorage-adapter";
 
+/*
 const storage = createStorage({
   driver: process.env.VERCEL
     ? vercelKVDriver({
@@ -20,6 +21,7 @@ const storage = createStorage({
       })
     : memoryDriver(),
 });
+*/
 
 const insecureCredentialsProviderAllowedForTesting =
   process.env.INSECURE_TESTING_PROVIDER_ON === "true" &&
@@ -75,7 +77,7 @@ const pages = {
 export const { handlers, auth, signIn, signOut } = NextAuth({
   debug: !!process.env.AUTH_DEBUG,
   theme: { logo: "https://authjs.dev/img/logo-sm.png" },
-  adapter: UnstorageAdapter(storage),
+  // adapter: UnstorageAdapter(storage),
   pages,
   providers: authProviders,
   basePath: "/auth",

@@ -1,0 +1,62 @@
+{
+  "ContentPage": {
+    "about": {
+      "text": "Demonstrating dynamic content pattern.",
+      "id": "demonstration"
+    }
+  },
+  "DashboardPage": {
+    "greeting": "Hello {name}!",
+    "pagename": "dashboard"
+  },
+  "Footer": {
+    "about": "about",
+    "blog": "blog",
+    "contact": "contact",
+    "data": "data"
+  },
+  "HomePage": {
+    "todoLabel": "Things you can do:",
+    "todoList": {
+      "protected": {
+        "preText": "Visit a ",
+        "linkText": "protected page",
+        "linkLocation": "/dashboard",
+        "postText": " and get redirected to signin"
+      },
+      "unprotected": {
+        "preText": "Visit an ",
+        "linkText": "unprotected page",
+        "linkLocation": "/about",
+        "postText": " and view it"
+      },
+      "signin": {
+        "preText": "",
+        "linkText": "Sign in",
+        "linkLocation": "/signin",
+        "postText": " and get redirected to dashboard"
+      },
+      "signout": {
+        "preText": "",
+        "linkText": "Sign out",
+        "linkLocation": "/signout",
+        "postText": ""
+      }
+    },
+    "nextAuthDemoLabel": "NextAuth demo (current session)"
+  },
+  "MainNav": {
+    "firstMenuTitle": "Lorem",
+    "secondMenuTitle": "Ipsum"
+  },
+  "SignInPage": {
+    "pagename": "login",
+    "testingPost": "/login",
+    "_defaultPagename": "auth/signin",
+    "_defaultTestingPost": "/auth/callback/insecure-testing"
+  },
+  "Site": {
+    "sitename": "launchpad",
+    "tagline": "Quick start template to get a best-practice web app up and running"
+  }
+}

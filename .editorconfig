@@ -1,0 +1,12 @@
+# Top-most EditorConfig file
+root = true
+
+[*]
+end_of_line = lf # Unix-style newlines
+insert_final_newline = true # Newline ending every file
+trim_trailing_whitespace = true # Trim whitespace preceding newlines
+charset = utf-8 # Enforce consistent character set
+indent_style = space # Matter of taste
+indent_size = 2
+tab_width = 4 # Number of columns used to represent a tab character
+
